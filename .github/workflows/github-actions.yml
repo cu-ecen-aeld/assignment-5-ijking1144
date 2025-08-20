@@ -1,6 +1,7 @@
 name: assignment-test
 on:
     push:
+    runs-on: self-hosted
         tags-ignore:
             - '*'
         branches:

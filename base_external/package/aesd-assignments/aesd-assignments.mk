@@ -6,7 +6,7 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = '547a8eca5c662d207f542016255ab70516c82680'
+AESD_ASSIGNMENTS_VERSION = '9b84aa2f3c21dae066fb88a04d13b8204b458d9f'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -21,7 +21,8 @@ define AESD_ASSIGNMENTS_BUILD_CMDS
 	@ls -la $(@D)/finder-app/ || echo "finder-app directory not found"
 	
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/finder-app all
-	
+	@echo "=== BUILDING AESD_ASSIGNMENTS ==="
+	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/server all
 	@echo "=== BUILD COMPLETE ==="
 endef
 

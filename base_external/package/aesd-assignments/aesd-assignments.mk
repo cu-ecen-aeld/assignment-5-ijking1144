@@ -6,11 +6,11 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = '5bcbd0b4f26aa07b8738a59f8c61f01f9a7ad695'
+AESD_ASSIGNMENTS_VERSION = '547a8eca5c662d207f542016255ab70516c82680'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
-AESD_ASSIGNMENTS_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-ijking1144.git'
+AESD_ASSIGNMENTS_SITE = 'git@github.com:cu-ecen-aeld/assignment-5-ijking1144.git'
 AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
 

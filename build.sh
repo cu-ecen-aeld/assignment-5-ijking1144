@@ -5,12 +5,14 @@
 source shared.sh
 
 EXTERNAL_REL_BUILDROOT=../base_external
+BUILDROOT_DIR=/home/ted/base_external/package/aesd-assignments
 git submodule init
 git submodule sync
 git submodule update
 
 set -e 
 cd `dirname $0`
+cp -r server/* ${BUILDROOT_DIR}
 
 if [ ! -e buildroot/.config ]
 then
